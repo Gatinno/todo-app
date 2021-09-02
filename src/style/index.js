@@ -6,3 +6,7 @@ export { default as Main } from './main';
 export { default as Form } from './form';
 export { default as Input } from './input';
 export { default as Button } from './button';
+export { default as TaskContainer } from './taskContainer';
+export { default as Checkbox } from './checkbox';
+export { default as TaskTitle } from './taskTitle';
+export { default as Footer } from './footer';

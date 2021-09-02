@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ProviderTasksList } from './contexts/tasksListContext';
 
 ReactDOM.render(
   <Router>
     <React.StrictMode>
-      <App />
+      <ProviderTasksList>
+        <App />
+      </ProviderTasksList>
     </React.StrictMode>
   </Router>,
   document.getElementById('root')

@@ -1,6 +1,6 @@
 import React from 'react';
 import Routes from './service/routes';
-import { Container } from './style';
+import { Container, Footer } from './style';
 import { HeaderComponent } from './components';
 
 const App = () => {
@@ -8,6 +8,9 @@ const App = () => {
     <Container>
       <HeaderComponent />
       <Routes />
+      <Footer>
+        <p>created by <a href="https://github.com/Gatinno">Gatinno</a> - devChallenges.io</p>
+      </Footer>
     </Container>
   );
 }
