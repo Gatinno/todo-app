@@ -1,5 +1,4 @@
 import React, {useContext, useEffect} from 'react';
-import { FormComponent } from '../components';
 import { Main } from '../style';
 import { TasksListContext } from '../contexts/tasksListContext'
 import { TaskComponent } from '../components';
@@ -18,7 +17,6 @@ const CompletedPage = () => {
   }
   return (
     <Main>
-      <FormComponent />
       <div>
         {
           filteredTasksList.map(({task, completed}, index) => <TaskComponent key={index} task={task} completed={completed} id={index} completedPage={true} /> )
